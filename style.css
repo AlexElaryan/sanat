@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 21.78px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 22px 10px 28px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.31px;
+    text-align: left;
+    color: rgba(62, 60, 45, 1);
+    text-transform: uppercase;
+}
+
+.head-right {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 9px 20px 6px 20px;
+    border: 1px solid rgba(62, 60, 45, 1);
+    border-radius: 45px;
+
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.langs {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 595px;
+    gap: 15px;
+    background: url(img/introbg.png);
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+.intro h2 {
+    font-size: 50px;
+    line-height: 60.51px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.intro h3 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 30px;
+    line-height: 36.31px;
+    text-align: center;
+}
+
+.intro p {
+    max-width: 725px;
+    margin-top: 11px;
+    font-size: 18px;
+    line-height: 21.78px;
+    color: rgba(62, 60, 45, 1);
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.31px;
+    color: rgba(27, 46, 63, 1);
+    text-transform: uppercase;
+    white-space: nowrap;
+
+}
+
+.about {
+    padding: 160px 100px 89px 120px;
+    display: flex;
+    gap: 48px;
+    background: url(img/aboutbg.png);
+    background-size: cover;
+    background-position-x: 106px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-info p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(27, 46, 63, 1);
+}
+
+.about-info ul li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    margin-left: 20px;
+}
+
+.about-info .ab-ul-title {
+    margin-left: 0;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: rgba(27, 46, 63, 1);
+    text-transform: uppercase;
+}
+
+.services {
+    background: rgba(207, 198, 177, 0.29);
+    padding: 52px 60px 80px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services_block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: calc(100% - 139px);
+    align-self: flex-end;
+}
+
+.services_block>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services_item {
+    height: 183px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(62, 60, 45, 1);
+    border-radius: 45px;
+}
+
+.services_item-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-transform: uppercase;
+}
+
+.services_item ul li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    color: rgba(27, 46, 63, 1);
+    margin-left: 20px;
+}
+
+.advantages {
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages img {
+    max-width: 411px;
+    object-fit: cover;
+}
+
+.advantages>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.adv-item li {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.adv-item li span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.adv-item {
+    max-width: 314px;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 126px 0 184px 132px;
+    background-color: rgba(207, 198, 177, 0.29);
+    background-image: url(img/contactbg.png);
+    background-position: right top;
+    background-size: 498px 518px;
+    background-repeat: no-repeat;
+}
+
+.contact h2 {
+    color: #000;
+}
+
+.contact h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contactForm {
+    margin-top: 50px;
+    width: 100%;
+    padding: 111px 0 187px 116px;
+    background-image: url(img/map.png);
+    background-size: cover;
+}
+
+.contactForm form {
+    width: 524px;
+    padding: 30px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: rgba(241, 238, 234, 1);
+    border: 1px solid rgba(62, 60, 45, 1);
+    border-radius: 45px;
+}
+
+.contactForm form>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.contactForm input {
+    width: calc(100% - 125px);
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    background: none;
+}
+
+.contactForm-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(27, 46, 63, 1);
+    text-transform: uppercase;
+}
+
+.contactForm label {
+    width: 90px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contactForm button {
+    width: fit-content;
+    color: rgba(27, 46, 63, 1);
+    padding: 8px 50px;
+    border: 1px solid rgba(62, 60, 45, 1);
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 45px;
+}
+
+footer {
+    padding: 50px 120px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1225px) {
+
+    .services,
+    .about,
+    .advantages,
+    .contactForm,
+    footer {
+        padding: 50px 60px;
+    }
+
+    .contact {
+        padding-left: 60px;
+    }
+
+    .services_item ul li,
+    .services_item-title,
+    .adv-item li,
+    .contact p,
+    .contact h3,
+    .contactForm label,
+    .contactForm-title,
+    footer h3,
+    .about-info p,
+    .about-info .ab-ul-title,
+    .about-info ul li,
+    .intro p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .services_block {
+        flex-direction: column;
+    }
+
+    .services_block>div {
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:870px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .head-right {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    nav ul li {
+        border: none;
+        padding: 0;
+    }
+
+    .logo h2 {
+        font-size: 25px;
+    }
+
+    .logo img {
+        width: 53px;
+    }
+
+    .language {
+        position: absolute;
+        top: 27px;
+        right: 20px;
+    }
+
+    .langs {
+        font-size: 12px;
+    }
+
+    .intro h2 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .intro h3 {
+        font-size: 20px;
+        line-height: normal;
+    }
+    .services_item ul li, .services_item-title, .adv-item li, .contact p, .contact h3, .contactForm label, .contactForm-title, footer h3, .about-info p, .about-info .ab-ul-title, .about-info ul li, .intro p {
+        font-size: 14px;
+        line-height: normal;
+        margin-top: 0;
+    }
+
+    .intro p {
+        max-width: fit-content;
+    }
+
+
+    .intro {
+        padding: 0 25px;
+        height: 539px;
+        gap: 16px;
+    }
+    .about {
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    .services_block {
+        width: 100%;
+    }
+
+    .title {
+        line-height: normal;
+        font-size: 25px;
+    }
+
+    .services_item {
+        gap: 8px;
+        height: fit-content;
+    }
+
+    .services, .about, .advantages, .contactForm, footer {
+        padding: 35px 25px;
+    }
+
+    .services_block>div, .services_block {
+        gap: 13px;
+    }
+
+    .services .title {
+        margin-bottom: 35px;
+    }
+
+    .advantages img {
+        display: none;
+    }
+
+    .advantages>div>div {
+        gap: 30px;
+    }
+    .advantages>div {
+        padding-top: 44px;
+        gap: 30px;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .advantages {
+        background-image: url(img/world.png);
+        background-size: 369px 315px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 70px;
+    }
+
+    .contact {
+        padding: 49px 30px;
+        padding-bottom: 375px;
+        background-size: 294px 306px;
+        background-position: right 101px;
+    }
+
+    .contactForm {
+        margin-top: 0;
+        position: relative;
+    }
+
+    .contactForm form {
+        padding: 27px 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 5px;
+        width: calc(100% - 30px);
+        position: absolute;
+        bottom: calc(100% + 48px);
+    }
+
+    .contactForm input {
+        width: calc(100% - 130px);
+    }
+
+    .contactForm form>div {
+        justify-content: space-between;
+    }
+    .contactForm button {
+        margin-top: 11px;
+        padding: 5px 33px;
+        font-size: 14px;
+    }
+
+    .contactForm form>div {
+        gap: 5px;
+    }
+
+    .contactForm {
+        height: 513px;
+    }
+
+    header {
+        padding-bottom: 19px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 15px 5px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }    
+
+    nav ul {
+        gap: 8px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .language img {
+        width: 21px;
+    }
+}
